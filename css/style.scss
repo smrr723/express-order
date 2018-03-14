@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Mina');
+
+// Colors
+
+// Fonts
+body {
+  font-family: 'Mina', sans-serif;
+  font-size: 8px;
+  letter-spacing: 1.29px;
+  color: black;
+  margin: 50px auto 20px auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+#status {
+  width: 45px;
+  height: 11px;
+  margin: 5px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #7BF5C5;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #CCC;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #CCC;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#request-box {
+  height: 135px;
+  width: 370px;
+  /* Rectangle: */
+  background: #6D6DC3;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  margin: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#new-request {
+  /* Rectangle 4: */
+  background: #6060CF;
+  border: 1px solid rgba(109,76,201,0.97);
+  border-radius: 3px;
+  color: #FFFFFF;
+  padding: 5px 20px 5px 20px;
+  margin-left: 30px;
+  font-size: 8px;
+}
+#logo {
+  margin-right: 30px;
+}
+
+#new-request:hover {
+  background: #4B4BE2;
+}
+
+#new-request:focus {
+  outline: none;
+}
+
+#requests {
+  /* Rectangle 5: */
+  background: #FFFFFF;
+  border: 1px solid rgba(151,151,151,0.65);
+  border-radius: 3px;
+  width: 320px;
+
+}
+
+#request-list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#request-list li:first-child {
+  background: #6060CF;
+  color: #FFFFFF;
+}
+
+#request-list li {
+  /* Rectangle 4: */
+  background: #D5D5F3;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  margin: 0px 0px 5px 0px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
