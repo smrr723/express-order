@@ -95,7 +95,7 @@ input:checked + .slider:before {
   margin-right: 30px; }
 
 #new-request:hover {
-  background: #4B4BE2; }
+  background: #4B4BE3; }
 
 #new-request:focus {
   outline: none; }
